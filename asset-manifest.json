@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/puzzle_temporarily/static/css/main.fdf6ea74.css",
+    "main.js": "/puzzle_temporarily/static/js/main.a5c867bb.js",
+    "static/media/to_contact_us.svg": "/puzzle_temporarily/static/media/to_contact_us.f9d08377b494c0bef4aac97824144854.svg",
+    "static/media/to_contact_us_blue.svg": "/puzzle_temporarily/static/media/to_contact_us_blue.ef5115a29d11056e9b13e56a8a173915.svg",
+    "static/media/inst.svg": "/puzzle_temporarily/static/media/inst.808dba874055a2d42f78b224bb819f11.svg",
+    "static/media/be.svg": "/puzzle_temporarily/static/media/be.63c705816e16b0e6dcfce2695e6a4640.svg",
+    "index.html": "/puzzle_temporarily/index.html",
+    "static/media/tg.svg": "/puzzle_temporarily/static/media/tg.639c3d4d911a52ff6218e7460fac792f.svg",
+    "static/media/fb.svg": "/puzzle_temporarily/static/media/fb.9db44e685f509b52db7c628448bb98da.svg",
+    "main.fdf6ea74.css.map": "/puzzle_temporarily/static/css/main.fdf6ea74.css.map",
+    "main.a5c867bb.js.map": "/puzzle_temporarily/static/js/main.a5c867bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdf6ea74.css",
+    "static/js/main.a5c867bb.js"
+  ]
+}
