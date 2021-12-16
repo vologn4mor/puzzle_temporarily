@@ -1,0 +1,11 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+
+
+* {
+    font-family: 'Gotham Pro';
+}
+
+.App {
+    max-width: 1920px;
+    margin: 0 auto;
+}
