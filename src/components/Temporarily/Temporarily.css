@@ -425,6 +425,10 @@ select {
     margin-bottom: 20px;
 }
 
+.temporarily-form_phone-block img {
+    width: 25px;
+}
+
 @media (max-width: 1600px) {
     .temporarily-design_and_development_left__block_text {
         font-size: 16px;
