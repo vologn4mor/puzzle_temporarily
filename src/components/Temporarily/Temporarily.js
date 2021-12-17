@@ -8,6 +8,43 @@ import inst from "./img/inst.svg";
 import be from "./img/be.svg";
 
 export default () => {
+
+    let display;
+    let form;
+
+    function btnOpenForm() {
+        display = getComputedStyle(document.getElementById("temporarily-form")).display;
+        form = document.getElementById("temporarily-form");
+
+        if (display === "none") {
+            form.style.display = "flex";
+            // form.style.top = document.documentElement.clientHeight / 2;
+            // form.style.left = document.documentElement.clientWidth / 2;
+            
+        }
+        else {
+            form.style.display = "none";
+        }
+
+        // top:50%;
+        // left:50%;
+        // transform:translate(-50%, -50%);
+    }
+
+    function cancelButton () {
+        document.getElementById("temporarily-form").style.display = "none";
+    }
+
+    window.addEventListener("click", function(e){
+        // display = getComputedStyle(document.getElementById("temporarily-form")).display;
+        // form = document.getElementById("temporarily-form");
+        console.log(document.documentElement.clientHeight);
+        console.log(document.documentElement.clientHeight);
+        // if (form !== e.target && display === "block" && e.target.tagName !== "IMG") {
+        //     form.style.display = "none";
+        // }
+    })
+
     return(
         <div className="temporarily-container">
             <div className="temporarily-circle-up"></div>
@@ -18,9 +55,9 @@ export default () => {
                     </div>
                     <div className="temporarily-design_and_development_left-your_business">
                         <p>Выведем ваш <br></br> бизнес в онлайн</p>
-                        <a href="#" className="temporarily-design_and_development_left-your_business__contact_us">
+                        <div className="temporarily-design_and_development_left-your_business__contact_us button_contact-us" onClick={btnOpenForm}>
                             <img src={ContactBlue}></img>
-                        </a>
+                        </div>
                     </div>
                     <div className="temporarily-design_and_development_left__block">
                         <div className="temporarily-design_and_development_left__block-main">
@@ -62,9 +99,9 @@ export default () => {
                             </div>
                         </div>
                     </div>
-                    <a href="#" className="temporarily-design_and_development_left__down_circle">
+                    <div className="temporarily-design_and_development_left__down_circle button_contact-us" onClick={btnOpenForm}>
                             <img src={ContactBlue}></img>
-                    </a>
+                    </div>
                     <div className="temporarily-circle-down"></div>
                 </div>
                 <div className="temporarily-design_and_development_right">
@@ -91,9 +128,9 @@ export default () => {
                                 <p className="temporarily-promotion-up-main-name">Валерия</p>
                                 <p className="temporarily-promotion-up-main-phone">+380 (50) 287-14-17</p>
                             </div>
-                            <a href="#">
+                            <div className="button_contact-us" onClick={btnOpenForm}>
                                 <img src={Contact}></img>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div className="temporarily-promotion-up-right">
@@ -118,6 +155,20 @@ export default () => {
                         <p>Сайт&nbsp;находится&nbsp;в&nbsp;разработке</p>
                     </div>
                 </div>
+            </div>
+            <div className="temporarily-form" id="temporarily-form">
+                <form>
+                    <div className="temporarily-form-get_consultation">
+                        <p>получить<br></br>консультацию</p>
+                    </div>
+                    <input className="temporarily-form_name" placeholder="КАК ВАС ЗОВУТ?"></input>
+                    <input className="temporarily-form_phone" placeholder="+380 (XX) XXX-XX-XX"></input>
+                    <input className="temporarily-form_email" placeholder="E-MAIL"></input>
+                    <button className="temporarily-form_email-submit_btn">
+                        <p>получить консультацию</p> 
+                    </button>
+                </form>
+                <div className="temporarily-form-cancel" onClick={cancelButton}>&#10006;</div>
             </div>
         </div>
     )
