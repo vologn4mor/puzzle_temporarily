@@ -26,6 +26,7 @@
     background: rgba(0, 3, 255, 0.25);
     -moz-filter: blur(500px);
     -webkit-filter: blur(150px);
+    z-index: -1;
 }
 
 .temporarily-design_and_development {
@@ -72,12 +73,12 @@
     margin-bottom: 0px;
 }
 
-.temporarily-design_and_development_left__block_text {
+.temporarily-design_and_development_left__block_text{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: #313131;   
+    transition: 2s;
 }
 
 .temporarily-design_and_development_left__block {
@@ -288,6 +289,11 @@ p.temporarily-promotion-up-main-phone:nth-child(5) {
     display: none;
 }
 
+.temporarily-promotion-up-main-phone a {
+    color: white;
+    text-decoration: none;
+}
+
 .temporarily-form-get_consultation > p:nth-child(1) {
     font-style: normal;
     font-weight: bold;
@@ -305,7 +311,6 @@ p.temporarily-promotion-up-main-phone:nth-child(5) {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    margin-bottom: 47px;
 }
 
 .temporarily-form form{
@@ -334,6 +339,90 @@ p.temporarily-promotion-up-main-phone:nth-child(5) {
     line-height: 18px;
     text-transform: uppercase;
     cursor:pointer;
+}
+
+.temporarily-design_and_development_left__block-main:hover {
+    background-color: #181acf;
+    color: white;
+    transition: 0.5s;
+}
+
+select {
+    border: none;
+    background-color: white;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+}
+  
+  
+  .temporarily-form_phone-block {
+    display: flex;
+    max-height: 25px;
+  }
+  
+  .temporarily-form_phone-block p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+  }
+  
+  
+.temporarily-form_phone {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.temporarily-form_phone-block__select_country {
+    display: flex;
+    margin-right: 20px;
+}
+.temporarily-form_phone-block__select_country > img:nth-child(1) {
+    margin-right: 5px;
+}
+
+.temporarily-form_phone-block__select_country_selected {
+    display: flex;
+    }
+.temporarily-form_phone-block__select_country {
+    flex-direction: column;
+}
+
+.temporarily-form_name {
+    margin-bottom: 20px;
+}
+
+.temporarily-form_email {
+    margin-top: 20px;
+}
+.temporarily-form_phone-block__select_country_option {
+    z-index: 1;
+    background-color: white;
+    margin-top: 10px;
+    display: none;
+}
+
+.temporarily-form_phone-block__select_country {
+    margin-top: 7px;
+    width: 25.2667px;
+    height: 18.95px;
+}
+
+.temporarily-form_phone-block__select_country_option__block {
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+}
+
+.temporarily-form_phone-block__select_country_option__block p{
+    background-color: white;
+    font-weight: bold;
+    border:none;
+}
+
+.temporarily-form_email {
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1600px) {

@@ -6,6 +6,9 @@ import tg from "./img/tg.svg";
 import fb from "./img/fb.svg";
 import inst from "./img/inst.svg";
 import be from "./img/be.svg";
+import ua from "./img/ua.svg";
+import ru from "./img/ru.svg";
+import arrow from "./img/arrow.svg"
 
 export default () => {
 
@@ -17,33 +20,42 @@ export default () => {
         form = document.getElementById("temporarily-form");
 
         if (display === "none") {
-            form.style.display = "flex";
-            // form.style.top = document.documentElement.clientHeight / 2;
-            // form.style.left = document.documentElement.clientWidth / 2;
-            
+            form.style.display = "flex";          
         }
         else {
             form.style.display = "none";
         }
-
-        // top:50%;
-        // left:50%;
-        // transform:translate(-50%, -50%);
     }
 
     function cancelButton () {
         document.getElementById("temporarily-form").style.display = "none";
     }
 
-    window.addEventListener("click", function(e){
-        // display = getComputedStyle(document.getElementById("temporarily-form")).display;
-        // form = document.getElementById("temporarily-form");
-        console.log(document.documentElement.clientHeight);
-        console.log(document.documentElement.clientHeight);
-        // if (form !== e.target && display === "block" && e.target.tagName !== "IMG") {
-        //     form.style.display = "none";
-        // }
-    })
+    function openSelect() {
+        let list = document.getElementById("countrySelect").nextElementSibling
+        let listDisplay = getComputedStyle(document.getElementById("countrySelect").nextElementSibling).display
+
+        if (listDisplay === "none") {
+            list.style.display = "block";          
+        }
+        else {
+            list.style.display = "none";
+        }
+    }
+
+    function selectRu() {
+        document.getElementById('imgSelectCountry').src = ru;
+        document.getElementById('pSelectCountry').innerText = "+7";
+        document.getElementById("countrySelect").nextElementSibling.style.display = "none";
+    }
+
+    function selectUa() {
+        document.getElementById('imgSelectCountry').src = ua;
+        document.getElementById('pSelectCountry').innerText = "+380";
+        document.getElementById("countrySelect").nextElementSibling.style.display = "none";
+    }
+
+    // console.log(document.getElementById("countrySelect").nextElementSibling)
 
     return(
         <div className="temporarily-container">
@@ -122,11 +134,11 @@ export default () => {
                         <div className="temporarily-promotion-up-main-contacts_block">
                             <div>
                                 <p className="temporarily-promotion-up-main-name">Данил</p>
-                                <p className="temporarily-promotion-up-main-phone">+380 (95) 081-37-98</p>
+                                <p className="temporarily-promotion-up-main-phone"><a href="tel:+380950813798">+380 (95) 081-37-98</a></p>
                             </div>
                             <div>
                                 <p className="temporarily-promotion-up-main-name">Валерия</p>
-                                <p className="temporarily-promotion-up-main-phone">+380 (50) 287-14-17</p>
+                                <p className="temporarily-promotion-up-main-phone"><a href="tel:+380502871417">+380 (50) 287-14-17</a></p>
                             </div>
                             <div className="button_contact-us" onClick={btnOpenForm}>
                                 <img src={Contact}></img>
@@ -162,9 +174,28 @@ export default () => {
                         <p>получить<br></br>консультацию</p>
                     </div>
                     <input className="temporarily-form_name" placeholder="КАК ВАС ЗОВУТ?"></input>
-                    <input className="temporarily-form_phone" placeholder="+380 (XX) XXX-XX-XX"></input>
+                        <div className="temporarily-form_phone-block">
+                        <div className="temporarily-form_phone-block__select_country">
+                            <div className="temporarily-form_phone-block__select_country_selected" id="countrySelect" onClick={openSelect}>
+                                <img src={ua} id="imgSelectCountry"></img>
+                                <img src={arrow}></img>
+                            </div>
+                            <div className="temporarily-form_phone-block__select_country_option">
+                                <div className="temporarily-form_phone-block__select_country_option__block" onClick={selectUa}>
+                                    <img src={ua}></img>
+                                    <p>UA</p>
+                                </div>
+                                <div className="temporarily-form_phone-block__select_country_option__block" onClick={selectRu}>
+                                    <img src={ru}></img>
+                                    <p>RU</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="pSelectCountry">+380</p>
+                        <input className="temporarily-form_phone" placeholder="(XX) XXX-XX-XX"></input> 
+                        </div>
                     <input className="temporarily-form_email" placeholder="E-MAIL"></input>
-                    <button className="temporarily-form_email-submit_btn">
+                    <button className="temporarily-form_email-submit_btn" onClick={cancelButton}>
                         <p>получить консультацию</p> 
                     </button>
                 </form>
