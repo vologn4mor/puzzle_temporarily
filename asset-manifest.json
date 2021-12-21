@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/puzzle_temporarily/static/css/main.fde08c8e.css",
+    "main.css": "/puzzle_temporarily/static/css/main.4a3708dd.css",
     "main.js": "/puzzle_temporarily/static/js/main.295b3980.js",
     "static/media/to_contact_us.svg": "/puzzle_temporarily/static/media/to_contact_us.f9d08377b494c0bef4aac97824144854.svg",
     "static/media/to_contact_us_blue.svg": "/puzzle_temporarily/static/media/to_contact_us_blue.ef5115a29d11056e9b13e56a8a173915.svg",
@@ -12,11 +12,11 @@
     "static/media/ru.svg": "/puzzle_temporarily/static/media/ru.f1c2ba49b3ccc06ba58a3889e1445971.svg",
     "static/media/ua.svg": "/puzzle_temporarily/static/media/ua.67a46bf793e26237ace0ff44b2eff6b6.svg",
     "static/media/arrow.svg": "/puzzle_temporarily/static/media/arrow.a51c43800f374f8a340627fcccf67842.svg",
-    "main.fde08c8e.css.map": "/puzzle_temporarily/static/css/main.fde08c8e.css.map",
+    "main.4a3708dd.css.map": "/puzzle_temporarily/static/css/main.4a3708dd.css.map",
     "main.295b3980.js.map": "/puzzle_temporarily/static/js/main.295b3980.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde08c8e.css",
+    "static/css/main.4a3708dd.css",
     "static/js/main.295b3980.js"
   ]
 }
