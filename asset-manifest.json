@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/puzzle_temporarily/static/css/main.06431c44.css",
+    "main.css": "/puzzle_temporarily/static/css/main.b9943e01.css",
     "main.js": "/puzzle_temporarily/static/js/main.3969a67a.js",
     "static/media/inst.svg": "/puzzle_temporarily/static/media/inst.d4f374145d5df80795458843f0706d19.svg",
     "static/media/be.svg": "/puzzle_temporarily/static/media/be.7e2d7b5da4f3cc3af7debbccf99b4211.svg",
@@ -11,11 +11,11 @@
     "static/media/cancelButtonX.svg": "/puzzle_temporarily/static/media/cancelButtonX.22565caa51e710e3c2740b0e39bcc358.svg",
     "static/media/ua.svg": "/puzzle_temporarily/static/media/ua.f9632e893bc41200a948166bdc0d2da9.svg",
     "static/media/arrow.svg": "/puzzle_temporarily/static/media/arrow.e626b4befe1e30c0006833ff8a0fabd4.svg",
-    "main.06431c44.css.map": "/puzzle_temporarily/static/css/main.06431c44.css.map",
+    "main.b9943e01.css.map": "/puzzle_temporarily/static/css/main.b9943e01.css.map",
     "main.3969a67a.js.map": "/puzzle_temporarily/static/js/main.3969a67a.js.map"
   },
   "entrypoints": [
-    "static/css/main.06431c44.css",
+    "static/css/main.b9943e01.css",
     "static/js/main.3969a67a.js"
   ]
 }
